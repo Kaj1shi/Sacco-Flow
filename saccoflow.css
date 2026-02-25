@@ -217,7 +217,7 @@
     .sticky-cta { bottom: 16px; right: 16px; }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 450px) {
     .manual-digital-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
