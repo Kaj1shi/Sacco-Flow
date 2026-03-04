@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register – SaccoFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="saccoflow.css">
+  <script src="https://kit.fontawesome.com/8ec4e20c05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Sacco<span>Flow</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-auth">
+      <a href="login.html" class="nav-auth-login">Login</a>
+      <a href="register.html" class="nav-auth-register">Register</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- REGISTER -->
+  <section class="about-hero-simple">
+    <div class="about-hero-inner" style="max-width:560px;">
+      <span class="section-tag">Register</span>
+      <h1 class="about-hero-title">Create a SaccoFlow account for your SACCO.</h1>
+      <p class="about-hero-lead">Share a few details to get started. Our team will review and help you complete setup, including data migration and onboarding.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="auth-wrapper">
+      <div class="auth-card">
+        <h2>Register your SACCO</h2>
+        <form class="contact-form">
+          <div class="form-field">
+            <label for="reg-sacco">SACCO name</label>
+            <input type="text" id="reg-sacco" name="sacco" placeholder="Your SACCO name" required>
+          </div>
+          <div class="form-field">
+            <label for="reg-name">Contact person</label>
+            <input type="text" id="reg-name" name="name" placeholder="Full name" required>
+          </div>
+          <div class="form-field">
+            <label for="reg-email">Work email</label>
+            <input type="email" id="reg-email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="reg-phone">Phone / WhatsApp</label>
+            <input type="tel" id="reg-phone" name="phone" placeholder="+256..." required>
+          </div>
+          <div class="form-field">
+            <label for="reg-members">Approximate number of members</label>
+            <select id="reg-members" name="members">
+              <option value="">Select range</option>
+              <option value="under-200">Under 200 members</option>
+              <option value="200-1000">200 – 1,000 members</option>
+              <option value="1000-5000">1,000 – 5,000 members</option>
+              <option value="5000-plus">5,000+ members</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary contact-submit">Create account</button>
+          <p class="auth-footnote">Already have an account? <a href="login.html">Login instead</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <div class="logo">Sacco<span>Flow</span></div>
+      <p>Built for Ugandan SACCOs · Kampala, Uganda</p>
+      <p class="footer-copy">&copy; 2026 SaccoFlow. All rights reserved.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html#features">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="mailto:saccoflow@gmail.com">Support</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="SaccoFlow on Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="SaccoFlow on X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="SaccoFlow on LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://wa.me/256761255072" target="_blank" rel="noopener noreferrer" aria-label="Chat with SaccoFlow on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY ELEMENTS -->
+  <div class="sticky-cta">
+    <a href="https://wa.me/256761255072" class="wa-btn" target="_blank" title="Chat on WhatsApp">💬</a>
+  </div>
+
+  <script>
+    const nav = document.querySelector('nav');
+    const navToggle = document.querySelector('.nav-toggle');
+    if (nav && navToggle) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+</body>
+</html>
+
