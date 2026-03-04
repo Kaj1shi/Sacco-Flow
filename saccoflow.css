@@ -1871,6 +1871,30 @@
       max-width: 280px;
       justify-content: center;
     }
+
+    /* Contact page responsive */
+    .contact-layout {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .contact-form-card,
+    .contact-info-card {
+      padding: 1.5rem;
+    }
+
+    .contact-form-card h2 {
+      font-size: 1.2rem;
+    }
+
+    .contact-info-card h3 {
+      font-size: 1rem;
+    }
   }
 
   @media (max-width: 450px) {
